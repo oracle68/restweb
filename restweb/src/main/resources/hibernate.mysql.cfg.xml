@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/eclipse</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Jose12345</property>
+        <property name="hibernate.connection.pool_size">5</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<!-- >property name="hibernate.hbm2ddl.auto">create</property-->
+		<property name="hibernate.id.new_generator_mappings">false</property>
+        <mapping class="com.myapp.model.City"/>
+        <mapping class="com.myapp.model.User"/>
+        <mapping class="com.myapp.model.Item"/>
+        <mapping class="com.myapp.model.Product"/>
+        <mapping class="com.myapp.model.Customer"/>
+        <mapping class="com.myapp.model.Address"/>
+        <mapping class="com.myapp.model.Cat"/>
+        <mapping class="com.myapp.model.CustomerAddress"/>
+        <mapping class="com.myapp.model.UserObjects"/>
+        <mapping class="com.myapp.model.Pelis"/>
+        <mapping class="com.myapp.model.PersonPhoto"/>
+        <mapping class="com.myapp.model.Provincia"/>               
+        <mapping class="com.myapp.model.Usuario"/>
+        <mapping class="com.myapp.model.Adresa"/>
+    </session-factory>
+</hibernate-configuration>

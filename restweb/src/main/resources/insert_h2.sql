@@ -1,0 +1,5 @@
+insert into PRODUCTS (id, NAME,DESCRIPTION, PRICE) values (999,'name999','desc999', '999.0')
+insert into PRODUCTS (id, NAME,DESCRIPTION, PRICE) values (998,'name998','desc998', '998.0')
+insert into PRODUCTS (id, NAME,DESCRIPTION, PRICE) values (997,'name997','desc997', '997.0')
+insert into PRODUCTS (id, NAME,DESCRIPTION, PRICE) values (996,'name996','desc996', '996.0')
+insert into PRODUCTS (id, NAME,DESCRIPTION, PRICE) values (995,'name995','desc995', '995.0')

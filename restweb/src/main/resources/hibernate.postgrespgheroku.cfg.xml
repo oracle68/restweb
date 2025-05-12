@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://ec2-54-228-209-117.eu-west-1.compute.amazonaws.com:5432/d7j89ev40fd6fm</property>
+        <property name="hibernate.connection.username">qgurhyqlpdesrg</property>
+        <property name="hibernate.connection.password">83cb2fb3f36380f09e5257feacf8a537c79a1a52498464836dfc87448cb1cb7f</property>
+        <property name="hibernate.connection.pool_size">1</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="com.myapp.modelpg.Usuaris"/>
+        <mapping class="com.myapp.modelpg.ProductPG"/>       
+    </session-factory>
+</hibernate-configuration>
