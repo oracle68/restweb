@@ -1,0 +1,45 @@
+<html><head>
+<title>HTML Charset</title> 
+<meta charset='utf-8'>
+ <script type="text/javascript"> 
+  function valida()
+{
+
+
+  if (document.f.nom.value=="")
+    { document.f.errname.value='camp name buit'; 
+     // return false;
+}
+  if (document.f.description.value=="")
+ { document.f.errdesc.value="camp description buit"; 
+   //return false;
+}
+  if (document.f.price.value=="") 
+       { document.f.errprice.value="camp price buit"; 
+   //    return false;
+}
+
+ if (f.nom.value!="" && f.description.value!="" && f.price.value!="") 
+  {
+   alert ('submit');
+   f.action="addProduct";
+   f.submit();
+  }
+else
+ {alert ("Hay errores");}   
+ return false;
+
+}
+</script>
+</head>
+<body>
+ <form name="f" action="" method="post" > 
+Name <input type='text' name='nom'/ required> <input type='text' name="errname" value=""/>
+<br>Desc<input type='text' name='description'/ required> <input type='text' name="errdesc" value=""/>
+<br>Price<input type='text' name='price'/required><input type='text' name="errprice" value=""/>
+<br><input type='hidden' name='valor' value='1'/required>
+<br><input type="submit" name="mybutton" onClick="valida();"/ >
+<br></form>
+</body>
+</html>
+
